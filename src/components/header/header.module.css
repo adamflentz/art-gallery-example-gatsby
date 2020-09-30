@@ -1,0 +1,29 @@
+.menu {
+  width: 25px;
+}
+
+.menuIcon {
+  width: 25px;
+  min-width: 25px;
+}
+
+.list {
+  min-width: 200px;
+}
+
+.listContainer {
+  margin-top: 25px;
+}
+
+.hamburger {
+  margin-right: 0px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+body {
+  margin: 0px;
+  background-color: #121212;
+}

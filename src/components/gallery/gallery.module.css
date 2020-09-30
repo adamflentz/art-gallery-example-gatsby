@@ -1,5 +1,5 @@
 .gallery {
-  height: 50vw;
-  width: 75vw;
+  max-width: 960px;
   margin: auto;
+  padding-top: 24px;
 }

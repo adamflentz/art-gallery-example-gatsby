@@ -24,7 +24,7 @@ export const query = graphql`
   }
 `
 
-const HomePage = ({ data }) => {
+const ArtGallery = ({ data }) => {
   return (
     <Palette>
       <Header>
@@ -33,4 +33,4 @@ const HomePage = ({ data }) => {
     </Palette>
   )
 }
-export default HomePage
+export default ArtGallery
