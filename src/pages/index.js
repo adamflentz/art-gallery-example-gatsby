@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import GalleryPage from "../components/gallery/gallery.js"
 
 export const query = graphql`
   {
@@ -10,6 +10,8 @@ export const query = graphql`
           absolutePath
           childImageSharp {
             original {
+              height
+              width
               src
             }
           }
@@ -22,9 +24,7 @@ export const query = graphql`
 const HomePage = ({ data }) => {
   return (
     <div>
-      {data.allS3ImageAsset.edges.map(image => (
-        <img src={image.node.childImageSharp.original.src}></img>
-      ))}
+      <GalleryPage images={data}></GalleryPage>
     </div>
   )
 }
