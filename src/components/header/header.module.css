@@ -1,0 +1,47 @@
+.menu {
+  width: 25px;
+}
+
+.menuIcon {
+  width: 25px;
+  min-width: 25px;
+}
+
+.list {
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.listContainer {
+  height: 90vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.hamburger {
+  margin-right: 0px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.instagramIconContainer {
+  margin-top: auto;
+}
+
+.instagramIcon {
+  margin: auto;
+}
+
+body {
+  margin: 0px;
+  background-color: #121212;
+}
