@@ -6,6 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import AppsIcon from "@material-ui/icons/Apps"
 import InfoIcon from "@material-ui/icons/Info"
 import HomeIcon from "@material-ui/icons/Home"
+import EmailIcon from "@material-ui/icons/Email"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
@@ -83,12 +84,18 @@ export default function Header({ children }) {
                   </ListItemIcon>
                   <ListItemText primary="Gallery" />
                 </ListItem>
+                <ListItem component={Link} to={"/contact"} button key="Contact">
+                  <ListItemIcon className={styles.menuIcon}>
+                    <EmailIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Contact Me" />
+                </ListItem>
                 <ListItem
                   component={Link}
                   className={classes.instagramIconContainer}
                   href={"https://www.instagram.com/lentzar_art/?hl=en"}
                   button
-                  key="Gallery"
+                  key="instagram"
                 >
                   <ListItemIcon className={styles.instagramIcon}>
                     <InstagramIcon className={styles.instagramIcon} />
