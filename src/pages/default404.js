@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Palette from "../components/palette/palette.js"
 import Header from "../components/header/header.js"
 import { makeStyles } from "@material-ui/core/styles"
@@ -39,6 +40,10 @@ export default function PageNotFound() {
   const classes = useStyles()
   return (
     <Palette>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Page Not Found</title>
+      </Helmet>
       <Header>
         <div className={classes.root}>
           <div className={classes.number}>
